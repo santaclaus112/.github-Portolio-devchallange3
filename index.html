@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+  <title>Best fudgy Cholcolate Cke</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: #333;
+}
+
+header {
+  width: 95%;
+  max-width: 969px;
+  margin: auto;
+  padding-top: 52px;
+}
+
+header h1 {
+  margin-bottom: 12px;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.subtitle-text {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.dots {
+  width: 13px;
+}
+
+header p {
+  display: inline-block;
+  max-width: px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-style: 14px;
+  line-height: 17px;
+}
+
+.mainpic {
+  margin-top: 46px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+main {
+  width: 95%;
+  max-width: 969px;
+  margin: auto;
+  padding-top: 48px;
+}
+
+main h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+main h3 {
+  margin-top: 32px;
+  margin-bottom: 31px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.ingredients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredients li {
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.ingredients input {
+  width: 21px;
+  height: 21px;
+}
+
+.ingredients label {
+  margin-left: 17px;
+  max-width: 554px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.resum {
+  width: 200px;
+  height: 355px;
+  padding-top: 14px;
+  background-color: grey;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  width: 100px;
+  margin: auto;
+  margin-top: 10px;
+}
+.icons{
+    color: #f2994a;
+    font-size: 30px;
+    margin-bottom: 50px
+}
+.box span {
+  display: inline-block;
+}
+
+.box .material-icons {
+  font-size: 40px;
+}
+
+.box:first-child .material-icons {
+  color: #f2994a;
+}
+
+.box-text {
+  display: inline-block;
+}
+
+.resum h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  color: #bdbdbd;
+}
+
+.resum p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.resum .box:first-child p {
+  color: #f2994a;
+}
+
+/* INSTRUCTIONS */
+.instructions h2 {
+  margin-top: 30px;
+}
+
+.video { display: flex;
+    justify-content: center;
+margin-top: 30px}
+.instructions li {
+  max-width: px;
+  position: relative;
+  margin-left: 51px;
+  margin-top: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  counter-increment: item;
+}
+
+.instructions li::before {
+  content: counter(item);
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: -51px;
+  display: inline-block;
+  border-radius: 6px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  background: #f2994a;
+}
+
+.instructions h4 {
+  margin-top: 53px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #bdbdbd;
+}
+
+br {
+  display: none;
+}
+
+footer {
+  margin-top: 93px;
+  padding-bottom: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding-top: 32px;
+  }
+
+  header h1 {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  header p {
+    max-width: auto;
+    font-style: 12px;
+    line-height: 15px;
+  }
+
+  .mainpic {
+    margin-top: 25px;
+  }
+
+  main {
+    width: 95%;
+    padding-top: 24px;
+  }
+
+  main h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  main h3 {
+    margin-top: 13px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .ingredients {
+    flex-direction: column-reverse;
+  }
+
+  .ingredients li {
+    display: flex;
+    margin-bottom: 13px;
+  }
+
+  .ingredients label {
+    margin-left: 8px;
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .resum {
+    width: 100%;
+    height: unset;
+    padding-top: 0px;
+    border-radius: unset;
+    box-shadow: unset;
+  }
+
+  .box {
+    width: 20%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  .box:first-child {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+
+  .box span {
+    display: inline-block;
+  }
+
+
+  .box-text {
+    display: inline-block;
+  }
+
+  .resum h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+    line-height: 10px;
+    color: #bdbdbd;
+  }
+
+  .resum p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .resum .box:first-child p {
+    color: #f2994a;
+  }
+
+  /* INSTRUCTIONS */
+  .instructions h2 {
+    margin-top: 30px;
+  }
+
+  .instructions li {
+    margin-top: 25px;
+    margin-right: 35px;
+    line-height: 24px;
+  }
+
+  .instructions h4 {
+    margin-top: 26px;
+    font-size: 12px;
+  }
+
+  br {
+    display: block;
+  }
+}
+
+    </style>
+<body>
+  <header>
+    <h1>Fudgy Chocolatecake Recipe</h1>
+    
+    <img class="mainpic" src="Best-Fudgy-Chocolate-Cake-IMAGE-105.jpg" height="600px" alt="chocolatecake">
+    <div class="subtitle-text">
+      <span><img src="6dots.svg" alt="dots-img"></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis voluptates ducimus! Nesciunt quasi veritatis nostrum enim, amet laboriosam consectetur.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ad culpa, dolorum laudantium deleniti sint repellendus magnam accusantium vero optio!</p>
+    </div>
+  </header>
+  <main>
+    <article class="ingredients">
+      <div class="text">
+        <h2>Ingredients</h2>
+        <h3>Lorem ipsum dolor sit.</h3>
+        <ul>
+          <li><input type="checkbox" name="" id=""><label>1 and 1/2 cups (150g) <b>Lorem ipsum dolor sit.</b> (Lorem ipsum dolor sit amet, consectetur.)</label></li>
+          <li><input type="checkbox" name="" id=""><label>5 Tablespoons (70g) <b>unsalted butter</b>, melted</label>
+          </li>
+          <li><input type="checkbox" name="" id=""><label>1/4 cup (50g) <b>granulated sugar</b></label></li>
+        </ul>
+        <h3>Chocolatecake</h3>
+        <li><input type="checkbox" name="" id=""><label>four B-ounce blocks (904g) chocolate, softened to
+            room
+            temperature</label></li>
+        <li><input type="checkbox" name="" id=""><label>1 cup (200g) <b>granulated sugar</b></label></li>
+        <li><input type="checkbox" name="" id=""><label>1 cup (240g) full-fat <b>cream</b>, at room
+            temperature</label></li>
+        <li><input type="checkbox" name="" id=""><label>1 teaspoon <b>pure vanilla extract</b></label></li>
+        <li><input type="checkbox" name="" id=""><label>2 teaspoons <b>fresh lemon juice</b> (optional, but
+            recommended)</label></li>
+        <li><input type="checkbox" name="" id=""><label>3 large <b>eggs</b>, at room temperature</label></li>
+    
+      </div>
+      <div class="resum">
+        <div class="box">
+          <span class="icons">Menu</span>
+          <br>
+          <div class="box-text">
+            <h6>YIELDS</h6>
+            <p>8 servings</p>
+          </div>
+        </div>
+        <div class="box">
+          <span class="material-icons">schedule</span>
+          <div class="box-text">
+           
+            <h6>PREP TIME</h6>
+            <p>20 minutes</p>
+          </div>
+        </div>
+        <div class="box">
+          <span class="material-icons">schedule</span>
+          <div class="box-text">
+            <h6>COOK TIME</h6>
+            <p>30 minutes</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="instructions">
+      <h2>Instructions</h2>
+      <ol>
+        <li>Adjust the oven rack to the lower-middle position and preheat oven to 350ºF (177ºC).</li>
+        <li><b>Make the crust: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsum rem autem illo pariatur non atque voluptatem incidunt, inventore perferendis veritatis laudantium dignissimos, debitis adipisci, libero nam sunt vitae quae! Deserunt repellendus praesentium fugit numquam optio, vel omnis commodi? Omnis reiciendis nesciunt consectetur tempora nam, ipsa ab qui nihil saepe?</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero asperiores qui porro dolor, a voluptatem dolorem quae molestiae! Nam, ad vero hic, adipisci voluptatibus excepturi odio tempore quisquam laboriosam amet minus quasi voluptatem quae debitis molestias repellendus doloribus est doloremque, ipsa ut dolores. Velit veniam quae minima quod ea nisi ipsam, accusamus. <br> Repudiandae tempora reiciendis magni assumenda possimus, non provident nesciunt, perspiciatis impedit totam qui odio veritatis quae quia quod doloremque repellat! Culpa, beatae error ea libero facilis voluptatibus molestias excepturi quis veniam cumque. Repudiandae sapiente, corrupti dolorem officiis fugit, nemo corporis, ipsam fugiat eius officia molestias? Sequi officia laborum modi incidunt sint excepturi nulla mollitia numquam, accusantium laboriosam facere magnam, ducimus placeat perspiciatis blanditiis, molestias autem cum! Mollitia minima ipsa repellat dolore ad delectus quia illo ipsum debitis quibusdam, quos eaque modi, et officiis placeat quisquam, commodi sapiente quaerat dolorum doloribus distinctio voluptas facere ipsam nesciunt. <br> Incidunt quo praesentium odit sapiente molestiae ratione, reiciendis, qui cumque sint voluptate enim. Eveniet provident dolor nobis quaerat tempora vero asperiores, magnam, suscipit repellendus cum a totam, rem quod error expedita mollitia iusto laudantium consectetur! Voluptates vitae illum odit, ad sequi facere officia repudiandae soluta mollitia eius, totam reiciendis? Magnam, rem deleniti expedita!</li>
+        
+        <div class="video">    
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QEmt7Y1Z7V4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati nobis enim ex dicta pariatur doloremque id consequatur animi, explicabo sapiente nisi alias a quaerat perspiciatis autem inventore voluptates at, voluptatum qui iure. Delectus praesentium impedit quas sapiente architecto porro omnis animi saepe explicabo eos modi enim alias laborum nisi magnam.<br> ea dolorum tempora repellendus vitae illum quis harum! Facere libero enim accusamus saepe rem corporis reprehenderit deserunt, illum voluptate odit nobis, ad, ex suscipit harum? In facere omnis, voluptatum quasi beatae reprehenderit temporibus error eos impedit et aliquam ullam provident quam dolorum necessitatibus, expedita quos? Consequuntur quibusdam, ipsa minus.</li>
+     
+      </ol>
+    
+
+    </article>
+  </main>
+
+  <footer>Created by Santa Clause - devChallenges.io</footer>
+    <h9><i>Source:<br> <a>https://cafedelites.com/best-fudgy-chocolate-cake/</i></a></h9>
+</body>
+
+</html>
